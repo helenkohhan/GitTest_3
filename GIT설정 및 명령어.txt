@@ -1,0 +1,52 @@
+git 명령어
+
+-사용자등록-
+git config --global user.name " 이름 "
+	
+git config --global user.email "이메일"
+
+
+
+
+
+1. git init : 관리자선언
+
+2. git branch -M main      : main 으로 작업자(branch)변경
+
+3. git remote add origin 깃허브주소    :   깃허브와 깃 연동
+
+
+----------------------------------------------------------
+깃허브 자료 가져오기 업로드하기
+
+git pull origin main :   main github에 있는 자료 폴더로 가져오기
+
+git push -u origin main : main github 로 작업내용 전달
+
+
+
+업로드 순서  pull -> add * -> commit -> push
+
+----------------------------------------------------------
+
+ls : 파일 목록조회
+
+git add *   : 전체작업선택
+
+git status : 작업중인? 내용출력
+
+git commit -m " 작업명 " : 현재까지 작업내용 저장
+
+git commit -am "작업명" : 새로 만든 파일이 없이 작업만했다면 git add 없이 바로 저장가능
+
+-----------------------------------------------------------------
+
+git log : 작업했던 내용 + 키값 출력
+
+git checkout 키값   : 원하는 이전작업위치로 이동
+
+git switch 브런치명  :  다시 원하는 작업위치로 복원
+
+git diff 키값 : 수정된 작업내용 확인
+
+git reset --hard  : 최근 저장한 버전이후에  저장안한 작업 삭제
